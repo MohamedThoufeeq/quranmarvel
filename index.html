@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>READ QURAN IN MULTI-LANGUAGE</title>
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+    <h1>READ QURAN IN MULTI-LANGUAGE</h1>
+    <div id="form-container">
+        <form id="verse-search-form">
+            <div id="formbox">
+            <div class="form-group">
+                <label for="chapter-number">Chapter:</label>
+                <select id="chapter-number" name="chapter-number" required>
+                    <!-- Chapter options go here -->
+                </select>
+            </div>
+            <div class="form-group"><label for="verse-number">Verse:</label>
+                <input type="number" id="verse-number" name="verse-number" min="1">
+            </div>
+
+            <div class="form-group"><label for="language">Edition:</label>
+                <select id="language">
+                    <option selected value="en.sahih"> Sahih International</option>
+                    <!-- Language options will be populated by JavaScript -->
+                </select>
+            </div>
+            </div>
+            <div id="checkboxid">
+                <input type="checkbox" name="showArabic" id="checkbox">
+                without Arabic
+            </div>
+        </form>
+    </div>
+    <div id="chapterInfo" class="container"></div>
+    <div id="resultbox">
+        
+        <div class="resultContainer">
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src='js/script.js'>
+    </script>
+</body>
+
+</html>
