@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 <head>
     <meta charset="utf-8">
     <title>READ QURAN IN MULTI-LANGUAGE</title>
@@ -30,9 +31,13 @@
                 </select>
             </div>
             </div>
+            <div class="tools" id="tools">
+            <button type="button" id = "minusbutton" class = "button">&lt chapter</button>
             <div id="checkboxid">
-                <input type="checkbox" name="showArabic" id="checkbox">
-                without Arabic
+                <input type="checkbox" name="showArabic" id="checkbox" title="showArabic">
+                Without Arabic
+            </div>
+            <button type="button" id = "plusbutton" class = "button">chapter ></button>
             </div>
         </form>
     </div>
@@ -44,8 +49,7 @@
         </div>
     </div>
 
-    <script src='js/script.js'>
-    </script>
+    <script src='js/script.js' defer></script>
 </body>
 
 </html>
