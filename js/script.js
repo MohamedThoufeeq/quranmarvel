@@ -296,19 +296,6 @@ languageDropdown.addEventListener('change', updateResult)
 // By default, display the numbered list of the verses from the first chapter of the Quran
 fetchVerses(1);
 
-// Add "display:none" style to "arabicVerse" class when checkbox is clicked
-document.addEventListener("DOMContentLoaded", function () {
-    // add the arabicVerse class to the element
-    let element = document.getElementById("arabicVerse");
-    element.classList.add("arabicVerse");
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    // add the arabicVerse class to the element
-    let element = document.getElementById("singleVerseArabic");
-    element.classList.add("singleVerseArabic");
-});
-
 // add an onChange event listener to the checkbox
 checkbox.addEventListener("click", function () {
     // if the checkbox is checked, set the display style of each arabicVerse element to 'flex'
@@ -316,8 +303,7 @@ checkbox.addEventListener("click", function () {
     for (let i = 0; i < arabicVerses.length; i++) {
         arabicVerses[i].style.display = this.checked ? "none" : "";
     }
-    document.getElementById('singleVerseArabic')
-        .style.display = this.checked ? "none" : "";
+    document.getElementById('singleVerseArabic').style.display = this.checked ? "none" : "";
 });
 // Add a click event listener to the plus button
 plusbutton.addEventListener('click', async function () {
