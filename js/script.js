@@ -191,7 +191,7 @@ async function fetchDataAndProcess(url, chapterNumber, verseNumber) {
                                  </tr>
                                  <tr>
                                    <td>${data.data[0].surah.number}</td>
-                                   <td>${data.data[0].surah.englishName}( ${data.data[0].surah.englishNameTranslation} )  ( ${data.data[0].surah.name} )</td>
+                                   <td>${data.data[0].surah.englishName} ( ${data.data[0].surah.englishNameTranslation} )  ( ${data.data[0].surah.name} )</td>
                                    <td> ${data.data[0].surah.numberOfAyahs}</td>
                                    <td>${data.data[0].surah.revelationType}</td>
                                  </tr></p>
@@ -252,7 +252,7 @@ async function fetchDataAndProcess(url, chapterNumber, verseNumber) {
                                  </tr>
                                  <tr>
                                    <td>${data.data[0].number}</td>
-                                   <td>${data.data[0].englishName}( ${data.data[0].englishNameTranslation} ) ( ${data.data[0].name} )</td>
+                                   <td>${data.data[0].englishName} ( ${data.data[0].englishNameTranslation} ) ( ${data.data[0].name} )</td>
                                    <td>${data.data[0].numberOfAyahs}</td>
                                    <td>${data.data[0].revelationType}</td>
                                  </tr></p>
