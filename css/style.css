@@ -4,12 +4,39 @@
             font-family: 'Alata';
         }
         @media only screen and (max-width: 370px) {
+            * {
+                justify-content: center;
+            }
+            body{
+                justify-content: center;
+                /* display: flexbox; */
+                align-items: center;
+            }
             #form-container,
             #chapterInfo {
                 width: 100%;
                 text-align: center;
             }
-        
+            #tab {
+                max-width: 100%;
+                width: 100%;
+            }
+            #tab th:nth-child(1),#tab td:nth-child(1) {
+                width: 15%; /* Adjust the percentage as needed */
+                }
+              #tab th:nth-child(2),#tab td:nth-child(2) {
+                width: 50%; /* Adjust the percentage as needed */
+                }
+              #tab th:nth-child(3),#tab td:nth-child(3) {
+                width: 15%; /* Adjust the percentage as needed */
+                }
+              #tab th:nth-child(4),#tab td:nth-child(4) {
+                width: 20%; /* Adjust the percentage as needed */
+                }
+            table td {
+                font-size: 12px;
+            }
+
             #formbox {
                 display: block;
             }
@@ -201,8 +228,7 @@
 
             background-color: rgb(10, 17, 116, 0.9);
             border-radius: 15px;
-            width: fit-content;
-            max-width: 90%;
+            max-width: fit-content;
             height: fit-content;
             text-align: center;
             margin-bottom: 10px;
@@ -326,10 +352,25 @@
             display: flex;
         }
         table {
+            max-width: 100%;
+            width: 100%;
             border-collapse: separate;
             border-spacing: 0;
             overflow: hidden;
           }
+          #tab th:nth-child(1),#tab td:nth-child(1) {
+            width: 15%; /* Adjust the percentage as needed */
+            }
+          #tab th:nth-child(2),#tab td:nth-child(2) {
+            width: 50%; /* Adjust the percentage as needed */
+            }
+          #tab th:nth-child(3),#tab td:nth-child(3) {
+            width: 15%; /* Adjust the percentage as needed */
+            }
+          #tab th:nth-child(4),#tab td:nth-child(4) {
+            width: 20%; /* Adjust the percentage as needed */
+            }
+
           th {
             /* background-color: #e0413d; */
             color: red;
