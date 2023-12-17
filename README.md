@@ -61,13 +61,10 @@ The Quran Reader Web Application allows users to explore the Quran in multiple l
 8. **Responsive Design:**
    - The user interface is designed to be responsive, ensuring a seamless experience across various devices and screen sizes.
 
-9. **Contribution Support:**
-    - The project includes contribution guidelines, encouraging other developers to contribute to the application's development and improvement.
-
-10. **Error Handling:**
+9. **Error Handling:**
     - The application incorporates error handling mechanisms to display informative messages in case of API request failures or other issues.
 
-11. **Clear Presentation:**
+10. **Clear Presentation:**
     - Verses are presented in a clear and organized manner, making it easy for users to read and understand the Quranic text.
 
 ## Installation
