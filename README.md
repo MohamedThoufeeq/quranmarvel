@@ -46,7 +46,7 @@ The Quran Reader Web Application allows users to explore the Quran in multiple l
    - The language dropdown enables users to choose from a variety of translations, providing a multi-language Quran reading experience.
 
 4. **Arabic Text Display:**
-   - Users have the option to show or hide the Arabic text using a checkbox, providing flexibility based on individual preferences.
+   - Users have the option to show or hide the Arabic text using a clicky switch, providing flexibility based on individual preferences.
 
 5. **Navigation Tools:**
    - Navigation buttons (`< chapter` and `chapter >`) allow users to easily move between chapters without manually changing the dropdown selection.
