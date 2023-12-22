@@ -333,7 +333,9 @@ plusbutton.addEventListener('click', async function () {
         await fetchVerses(chapterNumber, verseNumber);
 
         // Update the input field with the new verseNumber
-        verseNumberInput.value = verseNumber;
+        if(typeof verseNumber != 'undefined'){
+            verseNumberInput.value = verseNumber;
+        }
         chapterDropdown.value = chapterNumber;
     } catch (error) {
         console.error('Error fetching data:', error);
