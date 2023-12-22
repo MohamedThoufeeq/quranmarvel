@@ -94,7 +94,7 @@ The Quran Reader Web Application allows users to explore the Quran in multiple l
 
 ## Demo
 
-Click this link for live demo of out web application.
+Click this link for live demo of our web application.
 [quranmarvel.com/quran](https://quranmarvel.com/quran/)
 
 
