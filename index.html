@@ -5,8 +5,16 @@
 <head>
     <meta charset="utf-8">
     <title>READ QURAN IN MULTI-LANGUAGE</title>
-    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
-    <link rel='stylesheet' href='css/style.css'>
+    <!-- Primary font (Alata) + Arabic-supporting fallback fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+    <!-- existing stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font fallback for Arabic -->
+    <style>
+        body {
+            font-family: 'Alata', 'Noto Naskh Arabic', 'Amiri', 'Tahoma', sans-serif;
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
