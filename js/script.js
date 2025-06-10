@@ -83,14 +83,19 @@ function fetchLanguages() {
         .then(data => {
             const translations = data.data;
             let languageOptions = '';
-
-            translations.forEach(translation => {
-                const languageCode = translation.language;
-                const languageName = json[languageCode];
-                const identifier = translation.identifier;
-                languageOptions += `<option value="${identifier}">${languageName} (${translation.englishName})</option>`;
-            });
-
+            // Sort translations alphabetically by language name (from json) or fallback to englishName
+            translations
+                .sort((a, b) => {
+                    const nameA = (json[a.language] || a.englishName).toLowerCase();
+                    const nameB = (json[b.language] || b.englishName).toLowerCase();
+                    return nameA.localeCompare(nameB);
+                })
+                .forEach(translation => {
+                    const languageCode = translation.language;
+                    const languageName = json[languageCode];
+                    const identifier = translation.identifier;
+                    languageOptions += `<option value="${identifier}">${languageName} (${translation.englishName})</option>`;
+                });
             languageDropdown.innerHTML = `
                     <label for="language">Select language:</label>
                     <select id="language-select">
