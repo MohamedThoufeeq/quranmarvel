@@ -145,5 +145,3 @@ Feel free to contribute to the development of this project. Follow these steps:
 4. Push to the branch: `git push origin feature/new-feature`.
 5. Submit a pull request.
 
-## QuranMarvel
-Explore out Blog page [quranmarvel.com](https://quranmarvel.com/) where we explore about Marvel of Quran.
